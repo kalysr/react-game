@@ -1,0 +1,54 @@
+body{
+    background: url("img/background.jpg") no-repeat;
+    background-size: cover;
+}
+#content{
+}
+.game_content{
+    width: 395px;
+    height: 395px;
+    border: 10px solid #ddd;
+    position: relative;
+    background: #ccc;
+    margin: 50px auto;
+}
+.game_content .game_box{
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    background: #ffffff;
+    left: 5px;
+    top: 5px;
+    transition: .4s;
+}
+.game_box_num{
+    text-align: center;
+    margin-top: 25px;
+}
+.game_controller{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    right: -200px;
+    background: #ffffff;
+    border-radius: 10px;
+    top: 100px;
+    -moz-transform: rotate(45deg); /* Для Firefox */
+    -ms-transform: rotate(45deg); /* Для IE */
+    -webkit-transform: rotate(45deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(45deg); /* Для Opera */
+    transform: rotate(45deg);
+}
+.relative {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    padding: 5px;
+}
+.relative .btns{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+    background: #cccccc;
+}
