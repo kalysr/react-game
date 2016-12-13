@@ -405,6 +405,11 @@ var App = React.createClass({
                         <div className="btns" onClick={this.toDown}></div>
                     </div>
                 </div>
+                <div className="game_info">
+                    <h3>{this.state.score_max}</h3>
+                    <hr/>
+                    <h3>{this.state.score}</h3>
+                </div>
             </div>
         );
     }

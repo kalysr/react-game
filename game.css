@@ -4,6 +4,20 @@ body{
 }
 #content{
 }
+.game_info{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #cccccc;
+    border: 10px solid #fff;
+    left: -200px;
+    top: 100px;
+    border-radius: 50%;
+}
+.game_info h3{
+    text-align: center;
+    color: white;
+}
 .game_content{
     width: 395px;
     height: 395px;
