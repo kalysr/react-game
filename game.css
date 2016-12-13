@@ -17,9 +17,14 @@ body{
     height: 95px;
     position: absolute;
     background: #ffffff;
-    left: 5px;
-    top: 5px;
     transition: .4s;
+}
+.game_content .game_box_disable{
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    background: #ffffff;
+    transform: scale(0.7);
 }
 .game_box_num{
     text-align: center;
