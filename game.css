@@ -8,7 +8,7 @@ body{
     width: 150px;
     height: 150px;
     position: absolute;
-    background: #cccccc;
+    background: #8ea0ac;
     border: 10px solid #fff;
     left: -200px;
     top: 100px;
@@ -23,7 +23,7 @@ body{
     height: 395px;
     border: 10px solid #ddd;
     position: relative;
-    background: #ccc;
+    background: #8ea0ac;
     margin: 50px auto;
 }
 .game_content .game_box{
@@ -69,5 +69,5 @@ body{
     height: 60px;
     float: left;
     margin: 5px;
-    background: #cccccc;
+    background: #8ea0ac;
 }
