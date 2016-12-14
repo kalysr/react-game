@@ -180,11 +180,27 @@ var Box = React.createClass({
     getColor: function (num) {
         switch (num) {
             case 2:
-                return "orange";
+                return "#d2f5fb";
             case 4:
-                return "blue";
+                return "#bafeff";
             case 8:
-                return "green";
+                return "#63b77b";
+            case 16:
+                return "#d6c38b";
+            case 32:
+                return "#d48040";
+            case 64:
+                return "#e25a39";
+            case 128:
+                return "#f1d04b";
+            case 256:
+                return "#63b77b";
+            case 512:
+                return "#63b77b";
+            case 1024:
+                return "#e1af10";
+            case 2048:
+                return "#20c403";
         }
         return "#ffffff";
     },
