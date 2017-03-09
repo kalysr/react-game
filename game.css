@@ -43,6 +43,7 @@ body{
 .game_box_num{
     text-align: center;
     margin-top: 25px;
+    color: #ffffff;
 }
 .game_controller{
     width: 150px;

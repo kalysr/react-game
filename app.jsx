@@ -2,13 +2,13 @@ var Grid = [
     {
         x: 0,
         y: 0,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 1,
         y: 0,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
@@ -20,37 +20,37 @@ var Grid = [
     {
         x: 3,
         y: 0,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 0,
         y: 1,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 1,
         y: 1,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 2,
         y: 1,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 3,
         y: 1,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 0,
         y: 2,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
@@ -62,13 +62,13 @@ var Grid = [
     {
         x: 2,
         y: 2,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
         x: 3,
         y: 2,
-        active: 1,
+        active: 0,
         num: 2
     },
     {
