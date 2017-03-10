@@ -238,10 +238,10 @@ var App = React.createClass({
                 case 40:
                     self.toDown();
                     break;
-                case 37:
+                case 39:
                     self.toRight();
                     break;
-                case 39:
+                case 37:
                     self.toLeft();
                     break;
             }
