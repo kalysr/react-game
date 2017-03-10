@@ -401,7 +401,7 @@ var App = React.createClass({
         });
         self.setState({});
         setTimeout(function () {
-            console.log(this.diff());
+            console.log(self.diff());
             tmp_box.active = 1;
             self.setState({});
             TMP = Object.assign({}, this.state.grid);
