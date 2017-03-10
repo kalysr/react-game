@@ -417,9 +417,10 @@ var App = React.createClass({
     },
     diff: function () {
         var res = 0;
+        console.log(TMP);
         var G = this.state.grid;
-        TMP.map(function (el,i) {
-            var NOW =  G[i];
+        G.map(function (el,i) {
+            var NOW =  TMP[i];
             if(el.x == NOW.x && el.y == NOW.y && el.active == NOW.active && el.num == NOW.num){
 
             }else{
