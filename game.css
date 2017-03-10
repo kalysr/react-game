@@ -31,7 +31,7 @@ body{
     height: 95px;
     position: absolute;
     background: #ffffff;
-    transition: .4s;
+    transition: .2s;
 }
 .game_content .game_box_disable{
     width: 95px;
