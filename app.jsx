@@ -162,7 +162,7 @@ var GridTamplate = [
         y: 3,
     },
 ];
-var TMP = {};
+var TMP = [];
 
 var Box = React.createClass({
     getInitialState: function () {
@@ -417,8 +417,9 @@ var App = React.createClass({
     },
     diff: function () {
         var res = 0;
-        var NOW = this.state.grid;
-        TMP.map(function (el) {
+        var G = this.state.grid;
+        TMP.map(function (el,i) {
+            var NOW =  G[i];
             if(el.x == NOW.x && el.y == NOW.y && el.active == NOW.active && el.num == NOW.num){
 
             }else{
