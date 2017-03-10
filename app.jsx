@@ -401,15 +401,16 @@ var App = React.createClass({
             }
         });
         self.setState({});
-        setTimeout(function () {
-            console.log(self.diff());
-            if(self.diff()){
-                tmp_box.active = 1;
-            }
-            self.setState({});
-            TMP = Object.assign({}, self.state.grid);
-        },200);
+        if(self.diff()){
+            setTimeout(function () {
 
+                tmp_box.active = 1;
+                self.setState({});
+
+            },200);
+        }
+
+        TMP = Object.assign({}, self.state.grid);
         if(self.state.score > self.state.score_max){
             self.state.score_max = self.state.score;
             localStorage.setItem('score_2048',self.state.score_max);
