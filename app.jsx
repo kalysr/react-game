@@ -407,8 +407,9 @@ var App = React.createClass({
                 tmp_box.active = 1;
             }
             self.setState({});
-            TMP = Object.assign({}, this.state.grid);
+            TMP = Object.assign({}, self.state.grid);
         },200);
+
         if(self.state.score > self.state.score_max){
             self.state.score_max = self.state.score;
             localStorage.setItem('score_2048',self.state.score_max);
@@ -416,7 +417,7 @@ var App = React.createClass({
 
     },
     diff: function () {
-        return 1;
+
         var res = 0;
         console.log(TMP);
         var G = this.state.grid;
