@@ -222,6 +222,7 @@ var App = React.createClass({
             var score = 0;
 
         this.initKeyBoard();
+        TMP = Object.assign({}, Grid);
 
         return {
             grid: Grid,
@@ -402,7 +403,9 @@ var App = React.createClass({
         self.setState({});
         setTimeout(function () {
             console.log(self.diff());
-            tmp_box.active = 1;
+            if(self.diff()){
+                tmp_box.active = 1;
+            }
             self.setState({});
             TMP = Object.assign({}, this.state.grid);
         },200);
@@ -413,7 +416,16 @@ var App = React.createClass({
 
     },
     diff: function () {
-        return deepDiffMapper.map(TMP,this.state.grid);
+        var res = 0;
+        var NOW = this.state.grid;
+        TMP.map(function (el) {
+            if(el.x == NOW.x && el.y == NOW.y && el.active == NOW.active && el.num == NOW.num){
+
+            }else{
+                res = 1;
+            }
+        });
+        return res;
     },
     isEmpty: function (e) {
         var re = null;
