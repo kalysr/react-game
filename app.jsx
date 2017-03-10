@@ -418,7 +418,7 @@ var App = React.createClass({
 
     },
     diff: function () {
-
+        return 1;
         var res = 0;
         console.log(TMP);
         var G = this.state.grid;
