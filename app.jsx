@@ -220,10 +220,31 @@ var App = React.createClass({
         }else
             var score = 0;
 
+        this.initKeyBoard();
+
         return {
             grid: Grid,
             score: 0,
             score_max: score
+        };
+    },
+    initKeyBoard: function () {
+        var self = this;
+        document.onkeydown = function(e){
+            switch (e.keyCode){
+                case 38:
+                    self.toUp();
+                    break;
+                case 40:
+                    self.toDown();
+                    break;
+                case 37:
+                    self.toRight();
+                    break;
+                case 39:
+                    self.toLeft();
+                    break;
+            }
         };
     },
     toDown: function () {
